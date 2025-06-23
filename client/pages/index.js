@@ -19,7 +19,7 @@ export default function Home() {
     if (!city) return;
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:5000/weather?city=${city}`);
+      const res = await fetch(`https://weatherme-ml05.onrender.com/weather?city=${city}`);
       if (!res.ok) throw new Error('City not found');
       const data = await res.json();
       setWeather(data);
@@ -45,7 +45,7 @@ export default function Home() {
         const { latitude, longitude } = position.coords;
         try {
           const res = await fetch(
-            `http://localhost:5000/weather/geo?lat=${latitude}&lon=${longitude}`
+            `https://weatherme-ml05.onrender.com/weather/geo?lat=${latitude}&lon=${longitude}`
           );
           if (!res.ok) throw new Error('Failed to fetch weather by location');
           const data = await res.json();
