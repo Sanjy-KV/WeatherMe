@@ -4,7 +4,7 @@
 It allows users to search for the current weather and 3-day forecast of any city, or use their current geolocation. 
 The app includes engaging animations, real-time data, and smart clothing suggestions based on temperature.
 
-![WeatherMe Banner](./public/preview.png) <!-- Optional: Add a banner preview -->
+![WeatherMe Banner](./public/preview.png) 
 
 🚀 Features
 
