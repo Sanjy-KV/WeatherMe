@@ -16,7 +16,7 @@ export default function Home() {
   const [forecast, setForecast] = useState([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://weatherme-ml05.onrender.com';
 
   const testAPIConnection = async () => {
     try {
